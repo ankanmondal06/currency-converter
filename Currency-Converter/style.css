@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(144, 238, 144); /* Light turquoise background */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 300px;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #2f855a; /* A darker green for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid #e2e8f0; /* Light grey for the border */
+    color: #fff; /* White text for good contrast */
+    font-size: 18px;
+}
+
+#coinSticker {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 16px auto;
+}
+
+#userValue {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border-radius: 4px;
+    border: 1px solid #3182ce; /* A medium blue for input border */
+    outline: none;
+    font-family: monospace;
+}
+
+.selecterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.selecterContainer select {
+    padding: 6px;
+    border-radius: 4px;
+    max-width: 45%;
+    outline: none;
+    border: 1px solid #3182ce; /* Consistent with input border color */
+}
+
+#switchCurrency {
+    font-size: 22px;
+    background-color: transparent;
+    color: #2b6cb0; /* Darker blue for button text */
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#switchCurrency:hover {
+    color: #2c5282; /* Even darker blue on hover */
+}
+
+#status {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #718096; /* A grey color for status text */
+    text-transform: capitalize;
+}
+
+#btn {
+    width: 100%;
+    background-color: #3182ce; /* Blue button background */
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #fff; /* White text for better contrast */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.2s, transform 0.14s;
+}
+
+#btn:hover {
+    background-color: #2b6cb0; /* Darker blue on hover */
+    box-shadow: 0 0 8px rgba(50, 115, 220, 0.4);
+    transform: translateY(-2px);
+}
+
+#result {
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: 550;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(77, 223, 231, 0.3); /* Light turquoise with some transparency */
+    color: #2d3748; /* Dark grey text for good contrast */
+}
